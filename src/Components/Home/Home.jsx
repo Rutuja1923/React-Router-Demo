@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div className="mx-auto w-full max-w-7xl">
-      <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
-        <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
+    <div className="mx-auto w-full max-w-8xl bg-gray-700">
+      <aside className="relative overflow-hidden text-white rounded-lg sm:mx-16 mx-2 sm:py-16">
+        <div className="relative z-10 max-w-screen-xl  pb-10 pt-5 sm:py-10 mx-auto sm:px-6 lg:px-8">
           <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
             <h2 className="text-4xl font-bold sm:text-5xl">
               Download Now
-              <span className="hidden sm:block text-4xl">Lorem Ipsum</span>
+              <span className="hidden sm:block text-4xl">For Free</span>
             </h2>
 
             <Link
@@ -30,26 +30,26 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
+        <div className="absolute inset-0 w-full sm:pt-1  h-full ">
           <img
             className="w-100"
-            src='https://t3.ftcdn.net/jpg/02/66/01/74/360_F_266017476_ValnkxhBEEQIY40v1zLn0RE8R5xKB8UW.jpg'
+            src="/assets/people.png"
             alt="image1"
           />
         </div>
       </aside>
 
-      <div className="grid  place-items-center sm:mt-20">
+      <div className="grid place-items-center">
         <img
           className="sm:w-100 w-50"
-          src="https://media.istockphoto.com/id/1217401032/vector/business-meeting-people-conference-flat-vector-illustration.jpg?s=612x612&w=0&k=20&c=B-TphMKZK2AtWaMkbnUrHzSswiPTSudNlAmW5xGSrMI="
+          src="/assets/working.png"
           alt="image2"
         />
       </div>
 
-      <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">
-        Lorem Ipsum Yojo
-      </h1>
+      <p className="text-center text-2xl sm:text-5xl pb-10 text-white font-medium">
+        Let's Connect together and Explore More!
+      </p>
     </div>
   );
 }
